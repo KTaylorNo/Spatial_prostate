@@ -9,4 +9,6 @@ This GitHub repository contains code documenting the data pre-processing steps a
 - Genes from the Prolaris and ProClass panels were found to have low sample spot coverage and weak expression, hampering their spatial analysis using this technology and highlighting important limitations
 
 # Citation
-TBC
+Spatial robustness of prostate cancer biomarkers evaluated by spatial transcriptomics.
+Kristofer G. Taylor, Bjarne Johannessen, Ian G. Mills, Morten B. Rye, Karol Axcrona, Rolf I. Skotheim.
+Manuscript under review.
