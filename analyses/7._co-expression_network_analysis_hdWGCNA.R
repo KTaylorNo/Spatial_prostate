@@ -9,17 +9,12 @@ library(hdWGCNA)
 library(dplyr)
 library(tidyr)
 
-# Use cowplot theme globally
-theme_set(theme_cowplot())
-
 # Load Visium data
-
 prostate <- Load10X_Spatial(
-  data.dir = "</Path/To/Visium_Output>/outs"
+  data.dir = "</Path/To/Visium_Output/outs>"
 )
 
 # Basic filtering
-
 # Remove low-quality spots
 prostate <- subset(prostate, subset = nCount_Spatial >= 500)
 
