@@ -11,7 +11,7 @@ library(tidyr)
 
 # Load Visium data
 prostate <- Load10X_Spatial(
-  data.dir = "</Path/To/Visium_Output/outs>"
+  data.dir = "</Path/To/Visium_Output>/outs"
 )
 
 # Basic filtering
