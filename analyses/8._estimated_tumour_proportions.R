@@ -31,4 +31,4 @@ cluster_labels <- apply(cluster_scores, 1, function(x) {
 })
 idx <- match(spot_clusts, names(cluster_labels))
 spot_labels <- cluster_labels[idx]
-tumour_prop <- mean(spot_labels == "TUMOUR", na.rm = TRUE)
+tumour_prop <- mean(spot_labels == "Tumour", na.rm = TRUE)
