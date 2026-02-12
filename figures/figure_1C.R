@@ -142,7 +142,7 @@ combined_plot <- ggplot(avg_df, aes(x = Gene, y = AvgProportion, fill = Panel)) 
 # Save plot
 
 ggsave(
-  filename = "</Path/To/Output_Directory>/Figure1C_AllPanels_Combined.png",
+  filename = "/Path/To/Output_Directory>/Figure1C_AllPanels_Combined.png",
   plot     = combined_plot,
   width    = 6,
   height   = 3,
