@@ -127,15 +127,13 @@ analyze_gene <- function(gene) {
     group_by(Annotation) %>%
     filter(sum(Expression) > 0) %>%
     ungroup()
+
+  cat("\nGene:", gene, "\n")
+  cat("--------------------------------------------------\n")
   
-  cat("\n============================\n")
-  cat(" Gene:", gene, "\n")
-  cat("============================\n\n")
-  
- 
   # Global Kruskal–Wallis test
   
-  cat("### Global test: Kruskal–Wallis ###\n")
+  cat("Global test (Kruskal–Wallis):\n")
   kw <- kruskal.test(Expression ~ Annotation, data = df)
   print(kw)
   cat("\n")
@@ -146,7 +144,7 @@ analyze_gene <- function(gene) {
     group_by(Annotation) %>%
     summarise(median_expr = median(Expression))
   
-  cat("### Group medians ###\n")
+  cat("Group medians:\n")
   print(group_medians)
   cat("\n")
   
@@ -159,7 +157,7 @@ analyze_gene <- function(gene) {
   
   # Pairwise Wilcoxon tests vs enriched group
 
-  cat("### Pairwise Wilcoxon tests vs enriched group ###\n")
+  cat("Pairwise Wilcoxon tests vs enriched group:\n")
   
   other_groups <- setdiff(unique(df$Annotation), top_group)
   
