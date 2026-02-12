@@ -104,7 +104,7 @@ p <- ggplot(combined_df, aes(x = Sample_clean, y = Proportion, fill = Annotation
 # Save figure
 
 ggsave(
-  filename = "</Path/To/Output>/Figure1B_stacked_barplot.png",
+  filename = "/Path/To/Output>/Figure1B_stacked_barplot.png",
   plot     = p,
   width    = 7,
   height   = 4,
