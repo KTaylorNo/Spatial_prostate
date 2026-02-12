@@ -20,7 +20,7 @@ plot_msmb <- SpatialFeaturePlot(
   features       = "MSMB",
   slot           = "data",
   pt.size.factor = 2.5,
-  alpha          = c(3, 3)
+  alpha          = c(1, 1)
 ) +
   guides(
     fill = guide_colorbar(
